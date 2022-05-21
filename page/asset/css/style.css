@@ -565,6 +565,19 @@ opacity: 1
       transform: scaleX(0px);
     } 
   }
+  .zaa{
+    animation: zaaanim 10s;
+    font-size: 50px;
+    text-shadow: 10px 20px 50px rgb(227, 233, 229);
+
+  }
+  .z{
+    animation: zaaanim 10s;
+  }
+  @keyframes zaaanim {
+    0% { opacity: 0; color: #8fc2bee1;}
+    100% {opacity: 1; color: whitesmoke;}
+  }
   
   
   

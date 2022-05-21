@@ -45,7 +45,12 @@ html {
     animation: rotate-three 1s linear infinite;
     border-top: 3px solid #1010a3ea;
   }
-  
+  .loading
+  {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 40%;
+  }
   @keyframes rotate-one {
     0% {
       transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
