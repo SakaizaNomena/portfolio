@@ -181,6 +181,7 @@ body {
 .p_competence.hide{
     display: none;
 }
+
 .left, .right
 {
     font-size: 60px;
@@ -566,13 +567,20 @@ opacity: 1
     } 
   }
   .zaa{
-    animation: zaaanim 10s;
+    animation: zaaanim 7s;
     font-size: 50px;
     text-shadow: 10px 20px 50px rgb(227, 233, 229);
 
   }
   .z{
-    animation: zaaanim 10s;
+    animation: zaaanim 7s;
+  }
+  .zaoa{
+    animation: zaaanim 7s;
+    font-size: 15px;
+    text-shadow: 10px 20px 50px rgb(227, 233, 229);
+    text-decoration: underline;
+
   }
   @keyframes zaaanim {
     0% { opacity: 0; color: #8fc2bee1;}

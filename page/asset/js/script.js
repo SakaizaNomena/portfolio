@@ -54,5 +54,7 @@ window.onload=()=>{
  }
  slides[slide_index - 1].style.display = "block";
  }
+
+ 
    
  
