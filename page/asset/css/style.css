@@ -7,11 +7,11 @@ body {
 	font-family: monospace;
 	color: #FFF;
 	background-repeat: no-repeat;
-  margin-bottom: 100px;
-  background: linear-gradient(-45deg, #0c462e, #091125ee, #0c2b29, #0c462e);
+  background: linear-gradient(-40deg, #051d14,  #816111c5, #01040af3, #011d11);
+  background-size: cover;
 	background-size: 400% 400%;
-	animation: gradien 15s ease infinite;
-	height: 100vh;
+	animation: gradient 80s ease-in-out infinite;
+	height: 70vh;
 }
 .tabs .list{
     padding: 0;
@@ -435,22 +435,20 @@ animation-duration: 1.5s;
   {
     position: relative;
     justify-content: center;
-	  height: 92vh;
+	  height: 93vh;
     transform: scale(.5);
 		width: 90vw;
     margin-top: -42px;
     transform-origin: 1%;
-    border-radius: 15px;
+    border-radius: 30px;
   }
   .description
   {
     position: relative;
-    justify-content: center;
     float: right;
     margin-top: -38%;
-    margin-right: 20px;
-    text-overflow: clip;
-  }
+   margin-left: -30%;
+    }
   .description .title
   {
     font-size: xx-large;
@@ -935,6 +933,23 @@ h2.programas {
   h2 {font-size:2.2em; padding: 10px 0 15px 0;}
   .col {width: 90%;}
 }
+/*
+media query
+*/
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
+
+
 
 
 
