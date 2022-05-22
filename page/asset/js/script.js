@@ -54,7 +54,63 @@ window.onload=()=>{
  }
  slides[slide_index - 1].style.display = "block";
  }
+//slide automatique des elements realisation
+/*
+var slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slider");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 30000); // Change image every 2 seconds
+}
+  */
+var slide_index = 1;
+slidesDispla(slide_index);
+function nextSlid(n) {
+slidesDispla(slide_index += n);
+}
+function currentSlide(n) {
+slidesDispla(slide_index = n);
+}
+function slidesDispla(n) {
+var i;
+var slide = document.getElementsByClassName("carouselContainer");
+if (n > slide.length) { slide_index = 1 }
+if (n < 1) { slide_index = slide.length }
+for (i = 0; i < slide.length; i++) {
+slide[i].style.display = "none";
+}
+slide[slide_index - 1].style.display = "block";
+}
  
-   
+//jjjjjjjjjjjjjjjjjjj
+
+var slide_index = 1;
+slidesDispl(slide_index);
+function nextSli(n) {
+slidesDispl(slide_index += n);
+}
+function currentSlide(n) {
+slidesDispl(slide_index = n);
+}
+function slidesDispl(n) {
+var i;
+var slid = document.querySelectorAll(".slider");
+if (n > slid.length) { slide_index = 1 }
+if (n < 1) { slide_index = slid.length }
+for (i = 0; i < slid.length; i++) {
+slid[i].style.display = "none";
+}
+slid[slide_index - 1].style.display = "block";
+}
+
  
